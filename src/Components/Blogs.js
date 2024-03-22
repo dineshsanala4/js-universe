@@ -1,7 +1,14 @@
-import React from "react";
+import LinkedList from "../Utils/LinkedList";
 
 function Blogs({ blogs }) {
   console.log(blogs);
+
+  if (blogs) {
+    let list = LinkedList();
+    list.fromArray(blogs);
+    list.print();
+  }
+
   return (
     <div className="flex gap-2">
       {blogs &&

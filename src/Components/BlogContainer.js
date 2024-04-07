@@ -15,13 +15,16 @@ function BlogContainer() {
       const response = await fetch("http://localhost:4001/api/blogs");
       const json = await response.json();
       setBlogs(json);
-      console.log(blogs);
+      // console.log(blogs);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
   };
 
-  checkValidString("()");
+  console.log(
+    'checkValidString("()") is returning -> ',
+    checkValidString("()")
+  );
 
   return (
     <>

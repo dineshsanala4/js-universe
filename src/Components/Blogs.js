@@ -54,12 +54,12 @@ function Blogs({ blogs }) {
     );
   };
 
-  console.log(blogs);
+  // console.log(blogs);
 
   if (blogs) {
     let list = LinkedList();
     list.fromArray(blogs);
-    list.print();
+    // list.print();
   }
 
   return (

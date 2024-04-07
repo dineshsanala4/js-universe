@@ -7,6 +7,8 @@ let checkValidString = (str) => {
     } else if (str[i] === ")") {
       if (stack.length > 0) {
         stack.pop();
+      } else {
+        return false;
       }
     }
   }

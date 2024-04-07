@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Search from "./Search";
 import Blogs from "./Blogs";
-import checkValidString from "../Utils/Data Structures/Examples";
+import checkValidString from "../Utils/Data Structures/BalanceBraces";
 
 function BlogContainer() {
   const [blogs, setBlogs] = useState(null);

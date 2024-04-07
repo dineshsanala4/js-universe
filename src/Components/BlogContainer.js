@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Search from "./Search";
 import Blogs from "./Blogs";
+import checkValidString from "../Utils/Data Structures/Examples";
 
 function BlogContainer() {
   const [blogs, setBlogs] = useState(null);
@@ -19,6 +20,8 @@ function BlogContainer() {
       console.error("Error fetching data:", error);
     }
   };
+
+  checkValidString("()");
 
   return (
     <>

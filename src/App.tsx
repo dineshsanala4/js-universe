@@ -6,17 +6,15 @@ import BlogContainer from "./Components/BlogContainer";
 
 function App() {
   return (
-    <div className="Main">
-      <Router>
-        <div>
-          <Header />
-          <Routes>
-            <Route path="/" element={<BlogContainer />} />
-            <Route path="/blogs" element={<BlogContainer />} />
-          </Routes>
-        </div>
-      </Router>
-    </div>
+    <Router>
+      <Header />
+      <div>
+        <Routes>
+          <Route path="/" element={<BlogContainer />} />
+          <Route path="/blogs" element={<BlogContainer />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import LinkedList from "../Utils/LinkedList";
+import LinkedList from "../Utils/Data Structures/LinkedList";
 
 function Blogs({ blogs }) {
   const blogsContainerRef = useRef(null);

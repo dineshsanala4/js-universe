@@ -1,5 +1,10 @@
 import { useEffect, useRef } from "react";
-import LinkedList from "../Utils/Data Structures/LinkedList";
+import {
+  LinkedList,
+  LinkedListNode,
+} from "../Utils/Data Structures/LinkedList";
+import hasCycle from "../Utils/Data Structures/CyclicLinkedList";
+import checkValidString from "../Utils/Data Structures/BalanceBraces";
 
 function Blogs({ blogs }) {
   const blogsContainerRef = useRef(null);
@@ -60,6 +65,19 @@ function Blogs({ blogs }) {
     let list = LinkedList();
     list.fromArray(blogs);
     // list.print();
+
+    // Cyclic Linked Lists
+
+    const node4 = LinkedListNode(-4, null);
+    const node3 = LinkedListNode(0, node4);
+    const node2 = LinkedListNode(2, node3);
+    const node1 = LinkedListNode(3, node2);
+    node4.next = node2;
+    console.log(hasCycle(node1));
+
+    // Valid Braces
+
+    console.log(checkValidString("()"));
   }
 
   return (

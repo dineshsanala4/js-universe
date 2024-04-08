@@ -1,7 +1,7 @@
-const Node = (value) => {
+const LinkedListNode = (value, next = null) => {
   return {
     value,
-    next: null,
+    next: next,
   };
 };
 
@@ -9,9 +9,17 @@ const LinkedList = () => {
   let head = null;
   let tail = null;
 
+  const getHead = () => {
+    return head;
+  };
+
+  const getTail = () => {
+    return tail;
+  };
+
   // Complexity: O(1)
   const prepend = (value) => {
-    const newNode = Node(value);
+    const newNode = LinkedListNode(value);
     if (!head) {
       head = newNode;
       tail = newNode;
@@ -23,7 +31,7 @@ const LinkedList = () => {
 
   // Complexity: O(1)
   const append = (value) => {
-    const newNode = Node(value);
+    const newNode = LinkedListNode(value);
     if (!head) {
       head = newNode;
       tail = newNode;
@@ -40,7 +48,7 @@ const LinkedList = () => {
       return;
     }
 
-    const newNode = Node(value);
+    const newNode = LinkedListNode(value);
     let current = head;
     let prev = null;
     let count = 1;
@@ -175,6 +183,8 @@ const LinkedList = () => {
   };
 
   return {
+    getHead,
+    getTail,
     prepend,
     insertAt,
     append,
@@ -189,7 +199,7 @@ const LinkedList = () => {
   };
 };
 
-export default LinkedList;
+export { LinkedList, LinkedListNode };
 
 // Notes :-
 

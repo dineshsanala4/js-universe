@@ -1,5 +1,5 @@
 import hasCycle from "./CyclicLinkedList";
-import { LinkedList, LinkedListNode } from "./LinkedList";
+import { LinkedList, LinkedListNode } from "../LinkedList";
 
 test("(Using Node) Non Cyclick linked list should return false", () => {
   const node4 = LinkedListNode(-4, null);

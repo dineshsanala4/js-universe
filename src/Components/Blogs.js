@@ -3,8 +3,8 @@ import {
   LinkedList,
   LinkedListNode,
 } from "../Utils/Data Structures/LinkedList";
-import hasCycle from "../Utils/Data Structures/CyclicLinkedList";
-import checkValidString from "../Utils/Data Structures/BalanceBraces";
+import hasCycle from "../Utils/Data Structures/Examples/CyclicLinkedList";
+import checkValidString from "../Utils/Data Structures/Examples/BalanceBraces";
 
 function Blogs({ blogs }) {
   const blogsContainerRef = useRef(null);

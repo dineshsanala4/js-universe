@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import {
   LinkedList,
   LinkedListNode,
-} from "../Utils/Data Structures/LinkedList";
+} from "../Utils/Data Structures/LinkedList/LinkedList";
 import hasCycle from "../Utils/Data Structures/Examples/CyclicLinkedList";
 import checkValidString from "../Utils/Data Structures/Examples/BalanceBraces";
 

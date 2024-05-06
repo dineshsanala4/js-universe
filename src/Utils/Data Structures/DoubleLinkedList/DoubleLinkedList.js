@@ -9,6 +9,8 @@ const DoubleLinkedListNode = (value, prev = null, next = null) => {
 const DoubleLinkedList = () => {
   let head = null;
   let tail = null;
+
+  const append = () => {};
 };
 
 export { DoubleLinkedList, DoubleLinkedListNode };

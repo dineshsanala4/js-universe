@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import BlogContainer from "./Components/BlogContainer";
 
 function App() {
+  console.log("App is ready!");
+
   return (
     <Router>
       <Header />

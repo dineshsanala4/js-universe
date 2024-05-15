@@ -80,6 +80,7 @@ function Search() {
       <div className="pl-5">
         Search:{" "}
         <input
+          className="search-input"
           placeholder="Search"
           value={keyword}
           onChange={(e) => handleSuggestions(e.target.value)}

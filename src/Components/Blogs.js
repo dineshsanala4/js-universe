@@ -62,7 +62,7 @@ function Blogs({ blogs }) {
   if (blogs) {
     let list = LinkedList();
     list.fromArray(blogs);
-    // list.print();
+    list.print();
 
     // Cyclic Linked Lists
 

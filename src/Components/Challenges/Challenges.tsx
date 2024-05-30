@@ -88,6 +88,11 @@ function Challenges() {
         <div className="question">
           2. What happens in js with this code var b = [1, 2][3, 4];
         </div>
+        <div className="answer">
+          <p>
+            
+          </p>
+        </div>
       </div>
     </>
   );

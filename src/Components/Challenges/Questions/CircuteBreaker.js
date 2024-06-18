@@ -59,6 +59,7 @@ const testFunction = () => {
 //   c();
 //   c();
 //   c();
+//   c();
 // setTimeout(() => {console.log(c());}, 300);
 
 export default circuitBreaker;

@@ -39,7 +39,7 @@ const testFunction = () => {
   return function () {
     count++;
     if (count < 4) {
-      throw "failed";
+      throw new Error("Failed");
     } else {
       return "hello";
     }

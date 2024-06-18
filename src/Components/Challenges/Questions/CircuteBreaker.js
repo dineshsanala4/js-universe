@@ -46,6 +46,8 @@ const testFunction = () => {
   };
 };
 
+//   Test the code below :-
+
 //   let t = testFunction();
 //   let c = circuitBreaker(t, 3, 200);
 

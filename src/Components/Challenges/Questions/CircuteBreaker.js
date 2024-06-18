@@ -1,4 +1,4 @@
-// implement a curcuit breaker, that halts the function for x time if it fails for y count.
+// implement a curcuit breaker, that halts the function for x time if it fails for y count!
 
 const circuitBreaker = (fn, failureCount, timeThreshold) => {
   let failures = 0;
